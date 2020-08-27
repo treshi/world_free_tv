@@ -4,4 +4,4 @@ Best pages for iptv
 All links updatet daily
 World wide tv
 COPY PASTE ENJOY
-ALL RIGHT RESERVED ptccolo-tv.com
+ALL RIGHT RESERVED piccolo-tv.com
