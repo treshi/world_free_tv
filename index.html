@@ -427,7 +427,7 @@ Spark                                                        Starsat            
 <video class="video-js vjs-default-skin" controls="" data-setup="{}" height="230" id="MY_VIDEO_1" poster="images/upload/filmhits.jpg" preload="auto" width="400">
  <source src="http://95.107.132.218/out/u/746_1.m3u8" type="application/x-mpegURL"></source>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/5.14.1/videojs-contrib-hls.js"></script>
- </video><br /></a>
+ </video><br /></a><p>Views: <span id="totViews"></span></p>
                                 <h4>Channel one TV</h4>
                                 <ul>
                                     <li><strong>Step 1</strong> - Albanian TV.</li>
@@ -5399,6 +5399,17 @@ http://rv.therevenge.co:80/live/bF3k2rhh9g/sQfy6vy5tu/127.m3u8
               <li style="display: inline-block; list-style-type: none; padding-right: 2%;"><a href="https://twitter.com/cececen"><img style="width: 50px;"src="https://github.com/LeeTheTweak/HTMLEmail_Sweets_Galore/blob/master/twitterIcon.png?raw=true" /></a></li>
               <li style="display: inline-block; list-style-type: none; padding-right: 2%;"><a href="https://twitter.com/cececen"><img style="width: 50px;<i class="fab fa-github></i></a></li>
             </ul>
-</body>
+<script>
 
+document.getElementById("totViews").innerHTML = counter;
+
+    var counter = 0;
+
+    $('section video').on("timeupdate", function() {
+        if ($('section video')[0].currentTime >= 4) { counter++;
+        }
+    });
+
+    </script>             
+        </body>
 </html>
